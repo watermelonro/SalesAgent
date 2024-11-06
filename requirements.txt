@@ -1,0 +1,13 @@
+selenium
+webdriver_manager
+pandas
+python-dotenv
+langchain_community
+langchain
+langchain_openai
+langchain_teddynote
+langchain_core
+konlpy
+faiss-cpu
+scikit-learn
+stremlit
