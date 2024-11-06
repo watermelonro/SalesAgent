@@ -27,6 +27,13 @@ logging.langsmith("Sales_Agent-fredel2")
 st.title("SalesAgent")
 llm = ChatOpenAI(model_name="gpt-4o")
 
+# Selenium 설정
+options = Options()
+options.add_argument("--headless")  # 헤드리스 모드
+options.add_argument("--disable-gpu")
+options.add_argument("--no-sandbox")  # 권한 문제 해결
+options.add_argument("--disable-dev-shm-usage")  # 메모리 문제 해결
+options.add_argument("window-size=1920x1080")
 # 초기화: 단계 상태 관리
 if "stage" not in st.session_state:
     st.session_state["stage"] = "URL_INPUT"
